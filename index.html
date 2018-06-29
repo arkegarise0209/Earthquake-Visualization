@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Earthquakes</title>
+
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" media="screen" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <!-- Leaflet CSS & JS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+
+    <!-- Leaflet Timeline CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.timeline@1.2.0/dist/leaflet.timeline.min.js"></script> -->
+
+    <!--D3 CDN-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body style="overflow-x: hidden;">
+
+     <!-- jumbotron header -->
+
+    <div class="row" id="header">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="jumbotron">
+                    <div class="container">
+                        <h1>Earthquakes and Fault Lines</h1>
+                        <p>Map of all Earthquakes Over The last 7 Days</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+    </div>
+
+    <div class="container-fluid">
+
+        <!-- leaflet map -->
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div style="text-align: center">
+                    <h4><u>Earthquakes over the Last 7 Days</u></h4>
+                    <hr>
+                    <p>The map below shows the earthquake data over the last 7 days.  Color and size correspond
+                        to the magnitude of the earthquake.  Click markers for additional information.  
+                    </p>
+                </div>
+            </div>
+        </div>
+             
+
+    </div>
+    
+    <div id="map"></div>
+
+    <script src="logic.js"></script>
+    
+</body>
+
+</html>
+
